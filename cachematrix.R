@@ -6,7 +6,7 @@
 makeCacheMatrix <- function(x = matrix()) {
 
 }
-#bhakkk
+x <-5
 
 ## Write a short comment describing this function
 
