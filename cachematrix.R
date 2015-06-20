@@ -22,7 +22,10 @@ makeCacheMatrix <- function(x = matrix()) {
 
 cacheSolve <- function(x, ...) {
   mat <- x$getinverse()
-  
+  #checking if inverse matrix is already present 
+  if(!is.null(mat)) {
+    message("getting cached matrix. No need to compute")
+    return(mat)
   }
   #if inverse matrix isnt present, it will be computed 
   data <- x$get()
